@@ -1,69 +1,94 @@
-* {
-  box-sizing: border-box;
+ body{
+            width: 100%;
+            background-color: black;
+        }
+        h{
+            position: absolute;
+width: 680px;
+height: 62px;
+left: calc(50% - 680px/2 - 250px);
+top: 20%;
+font-family: Quantico;
+font-style: normal;
+font-weight: bold;
+font-size: 54px;
+line-height: 77px;
+color: #FFFFFF;
+        }
+        p{
+            position: absolute;
+width: 680px;
+height: 277px;
+left: calc(50% - 680px/2 - 250px);
+top: 30%;
+
+font-family: Quantico;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+
+color: #FFFFFF;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 60% 30%;
+        }
+        #btn{
+	
+position: absolute;
+width: 213px;
+height: 60px;
+left: 18%;
+top: 85%;
+background: linear-gradient(106.89deg, #90C7F4 22.06%, #FFFFFF 119.56%);
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+border-radius: 4px;
+}
+a{
+    text-decoration: none;
 }
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  font-size: larger;
-}
+.labelClass{
+            color: white;
+            float: left;
+            width: 113px;
+        }
+       .input{
+           position: absolute;
+           top: 50%;
+           left: 40%;
+       }
+       #p{
+           position: absolute;
+width: 1180px;
+height: 54px;
+left: 130px;
+top: 140px;
+font-family: Quantico;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+color: #FFFFFF;
+       }
+       footer{
+           position: absolute;
+width: 1520px;
+height: 123px;
+left: 0px;
+top: 727px;
 
-/* Full-width input fields */
-input[type="text"],
-input[type="number"] {
-  width: 50%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+background: #1656BD;
+       }
+#Submit{
+    position: absolute;
+width: 200px;
+height: 60px;
+top: 40%;
+left: 80%;
+background-color: black;
+color: #FFFFFF;
+font-size: 20px;
 }
-
-input[type="text"]:focus,
-input[type="number"]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for the submit/register button */
-.registerbtn {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  opacity: 0.9;
-}
-
-.registerbtn:hover {
-  opacity: 1;
-}
-
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-

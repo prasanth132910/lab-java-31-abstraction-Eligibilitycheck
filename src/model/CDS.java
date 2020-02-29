@@ -4,22 +4,19 @@ public class CDS extends Abstract {
 	
 	private int height;
 	private int weight;
-	private int tooth;
-	private String vision;
-	private String swim;
+	private String number;
 	
-	public CDS(int age, String maritial, String country, int height, int weight, int tooth, String vision, String swim) {
-		super(age, maritial, country);
+	public CDS(String name, int age, String country, int height, int weight, String number) {
+		super(age,country);
 		this.height=height;
 		this.weight=weight;
-		this.tooth=tooth;
-		this.vision=vision;
-		this.swim=swim;
+		this.number=number;
+		
 		}
 	
 	public boolean cdsEligible()
 	{
-		if(height>=152 && weight>=54 && tooth>=14 && tooth<=17 && !vision.equals("other") && swim.equals("yes"))
+		if(height>=152 && weight>=54 )
 		{
 			return true;
 		}
