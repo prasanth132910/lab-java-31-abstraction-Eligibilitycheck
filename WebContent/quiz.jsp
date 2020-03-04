@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <input type="hidden" id="myInput" value="40" class="point" name="points"> 
+    <input type="hidden" id="myInput" class="point" name="points"> 
     </form>
      <footer>
         <div>

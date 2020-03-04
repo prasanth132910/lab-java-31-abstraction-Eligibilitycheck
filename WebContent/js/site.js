@@ -118,6 +118,7 @@ function next() {
   // check the answer is right or wrong
   if (user_answer == questions[question_count].answer) {
     points += 10;
+    document.getElementById("myInput").value = points;
     sessionStorage.setItem("points", points);
   }
   else{
