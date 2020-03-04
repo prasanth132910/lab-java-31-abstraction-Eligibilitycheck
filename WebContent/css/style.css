@@ -215,3 +215,13 @@ footer {
         color: #FFFFFF;
         font-size: 20px;
         }
+        #save {
+            position: absolute;
+            width: 200px;
+            height: 60px;
+            top: 40%;
+            left: 80%;
+            background-color: black;
+            color: #FFFFFF;
+            font-size: 20px;
+        }

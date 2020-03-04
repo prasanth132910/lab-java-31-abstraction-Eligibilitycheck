@@ -28,7 +28,7 @@ public class EligibilityViewController extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		String submit=request.getParameter("submit");
+		String submit=request.getParameter("submit");
 		String name=request.getParameter("name");
 		int age=Integer.parseInt(request.getParameter("age"));
 		String country=request.getParameter("country");
@@ -36,10 +36,12 @@ public class EligibilityViewController extends HttpServlet {
 		int weight=Integer.parseInt(request.getParameter("weight"));
 		String number=request.getParameter("Number");
 		
-//		if (submit != null) {
-//			RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/form.jsp");
-//			rd.forward(request, response);
-//		}
+		
+		
+		if (submit != null) {
+			RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/form.jsp");
+			rd.forward(request, response);
+		}
 			CDS cds=new CDS(name,age,country,height,weight,number);
 			boolean a=cds.baseEligibility();
 			boolean b=cds.cdsEligible();
@@ -54,9 +56,7 @@ public class EligibilityViewController extends HttpServlet {
 				rd.forward(request, response);
 				
 			}
-				
 		
-
 }
 }
 
